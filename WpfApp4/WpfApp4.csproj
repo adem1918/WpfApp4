@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="VW_Passat_B5_rear_20080818.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="VW_Passat_B5_rear_20080818.jpg" />
+  </ItemGroup>
+
 </Project>

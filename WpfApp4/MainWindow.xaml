@@ -7,13 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="Počet sušenek: " HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Height="50" Width="172" FontSize="20" HorizontalContentAlignment="Center"/>
+        <Label Content="Počet passatů: " HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Height="50" Width="172" FontSize="20" HorizontalContentAlignment="Center"/>
         <Label Content="Počet kliknutí: " HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Sušenky za sekundu: " HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="Sušenky za kliknutí: " HorizontalAlignment="Center" Margin="0,163,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Passaty za sekundu: " HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Passaty za kliknutí: " HorizontalAlignment="Center" Margin="0,163,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Label Content="Počet vylepšení: " HorizontalAlignment="Center" Margin="0,199,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Image Margin="287,260,287,29" Source="/VW_Passat_B5_rear_20080818.jpg" Stretch="Fill"/>
         <Button Content="Obchod" HorizontalAlignment="Left" Margin="618,30,0,0" VerticalAlignment="Top" Height="84" Width="154"/>
+        <Button Content="" Margin="244,244,244,30">
+            <Button.Background>
+                <ImageBrush ImageSource="/VW_Passat_B5_rear_20080818.jpg" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
