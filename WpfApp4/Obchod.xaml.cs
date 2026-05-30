@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -14,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace WpfApp4
 {
-    /// <summary>
-    /// Interakční logika pro Obchod.xaml
-    /// </summary>
     public partial class Obchod : Window
     {
         GameState gameState;
@@ -30,10 +28,14 @@ namespace WpfApp4
         {
             InitializeComponent();
             this.gameState = gameState;
+
+            firstcena.Content = price1;
+            secondcena.Content = price2;
+            thirdcena.Content = price3;
+            fourthcena.Content = price4;
+            fifthcena.Content = price5;
         }
-        private void Label_TextChanged(object sender, TextChangedEventArgs e)
-        {
-        }
+      
         private void upgrade1(object sender, RoutedEventArgs e)
         {
             if (gameState.Cookies >= price1)
@@ -42,6 +44,8 @@ namespace WpfApp4
                 gameState.CookiesPerClick += 1;
                 price1 *= 1.5;
                 firstcena.Content = price1.ToString();
+                gameState.TotalUpgradesBought++;
+                SystemSounds.Beep.Play();
             }
             else
             {
@@ -58,6 +62,8 @@ namespace WpfApp4
                 gameState.CookiesPerClick += 4;
                 price2 *= 1.5;
                 secondcena.Content = price2.ToString();
+                gameState.TotalUpgradesBought++;
+                SystemSounds.Beep.Play();
             }
             else
             {
@@ -72,6 +78,8 @@ namespace WpfApp4
                 gameState.CookiesPerSecond += 1;
                 price3 *= 1.5;
                 thirdcena.Content = price3.ToString();
+                gameState.TotalUpgradesBought++;
+                SystemSounds.Beep.Play();
             }
             else
             {
@@ -86,6 +94,8 @@ namespace WpfApp4
                 gameState.CookiesPerSecond += 5;
                 price4 *= 1.5;
                 fourthcena.Content = price4.ToString();
+                gameState.TotalUpgradesBought++;
+                SystemSounds.Beep.Play();
             }
             else
             {
@@ -100,6 +110,8 @@ namespace WpfApp4
                 gameState.CookiesPerSecond += 25;
                 price5 *= 1.5;
                 fifthcena.Content = price5.ToString();
+                gameState.TotalUpgradesBought++;
+                SystemSounds.Beep.Play();
             }
             else
             {
