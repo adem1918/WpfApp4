@@ -19,9 +19,92 @@ namespace WpfApp4
     /// </summary>
     public partial class Obchod : Window
     {
-        public Obchod()
+        GameState gameState;
+        double price1 = 10;
+        double price2 = 50;
+        double price3 = 100;
+        double price4 = 500;
+        double price5 = 2500;
+
+        public Obchod(GameState gameState)
         {
             InitializeComponent();
+            this.gameState = gameState;
+        }
+        private void Label_TextChanged(object sender, TextChangedEventArgs e)
+        {
+        }
+        private void upgrade1(object sender, RoutedEventArgs e)
+        {
+            if (gameState.Cookies >= price1)
+            {
+                gameState.Cookies -= price1;
+                gameState.CookiesPerClick += 1;
+                price1 *= 1.5;
+                firstcena.Content = price1.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Mas malo passatu!!");
+            }
+        }
+      
+
+        private void upgrade2(object sender, RoutedEventArgs e)
+        {
+            if (gameState.Cookies >= price2)
+            {
+                gameState.Cookies -= price2;
+                gameState.CookiesPerClick += 4;
+                price2 *= 1.5;
+                secondcena.Content = price2.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Mas malo passatu!!");
+            }
+        }
+        private void upgrade3(object sender, RoutedEventArgs e)
+        {
+            if (gameState.Cookies >= price3)
+            {
+                gameState.Cookies -= price3;
+                gameState.CookiesPerSecond += 1;
+                price3 *= 1.5;
+                thirdcena.Content = price3.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Mas malo passatu!!");
+            }
+        }
+        private void upgrade4(object sender, RoutedEventArgs e)
+        {
+            if (gameState.Cookies >= price4)
+            {
+                gameState.Cookies -= price4;
+                gameState.CookiesPerSecond += 5;
+                price4 *= 1.5;
+                fourthcena.Content = price4.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Mas malo passatu!!");
+            }
+        }
+        private void upgrade5(object sender, RoutedEventArgs e)
+        {
+            if (gameState.Cookies >= price5)
+            {
+                gameState.Cookies -= price5;
+                gameState.CookiesPerSecond += 25;
+                price5 *= 1.5;
+                fifthcena.Content = price5.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Mas malo passatu!!");
+            }
         }
     }
 }

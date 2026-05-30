@@ -13,5 +13,14 @@ namespace WpfApp4
         public double CookiesPerSecond { get; set; }
         public int TotalClicks { get; set; }
         public int TotalUpgradesBought { get; set; }
+
+        public GameState()
+        {
+            Cookies = 0;
+            CookiesPerClick = 1;
+            CookiesPerSecond = 0;
+            TotalClicks = 0;
+            TotalUpgradesBought = 0;
+        }   
     }
 }

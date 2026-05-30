@@ -7,16 +7,27 @@
         mc:Ignorable="d"
         Title="Obchod" Height="450" Width="800">
     <Grid>
-        <Label Content="Lepší kurzor" HorizontalAlignment="Left" Margin="92,76,0,0" VerticalAlignment="Top"/>
-        <Label Content="Dvojité kliknutí" HorizontalAlignment="Left" Margin="92,132,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="92,191,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="92,247,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="92,302,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="210,76,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="210,132,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="210,191,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="210,247,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="210,302,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lepší kurzor" HorizontalAlignment="Left" Margin="29,83,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Dvojité kliknutí" HorizontalAlignment="Left" Margin="417,84,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Babička pekařka" HorizontalAlignment="Left" Margin="29,209,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Malá pekárna" HorizontalAlignment="Left" Margin="417,200,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Továrna na sušenky" HorizontalAlignment="Left" Margin="29,333,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="firstcena" Content="10" HorizontalAlignment="Left" Margin="193,84,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="secondcena" Content="50" HorizontalAlignment="Left" Margin="581,85,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="thirdcena" Content="100" HorizontalAlignment="Left" Margin="193,210,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="fourthcena" Content="500" HorizontalAlignment="Left" Margin="581,0,0,0" VerticalAlignment="Center" FontSize="16"/>
+        <Label x:Name="fifthcena" Content="2500" HorizontalAlignment="Left" Margin="189,333,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="firstupg" Content="Koupit" HorizontalAlignment="Left" Margin="252,333,0,0" VerticalAlignment="Top" Height="34" Width="125"/>
+        <Button x:Name="secondupg" Content="Koupit" HorizontalAlignment="Left" Margin="640,84,0,0" VerticalAlignment="Top" Height="34" Width="125"/>
+        <Button x:Name="thirdupg" Content="Koupit" HorizontalAlignment="Left" Margin="252,205,0,0" VerticalAlignment="Top" Height="34" Width="125"/>
+        <Button x:Name="fourthupg" Content="Koupit" HorizontalAlignment="Left" Margin="252,83,0,0" VerticalAlignment="Top" Height="34" Width="125"/>
+        <Button x:Name="fifthupg" Content="Koupit" HorizontalAlignment="Left" Margin="640,0,0,0" VerticalAlignment="Center" Height="34" Width="125"/>
+        <Label Content="Obchod s vylepšeními" HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Zvyšuje počet sušenek za kliknutí o 1" HorizontalAlignment="Left" Margin="29,123,0,0" VerticalAlignment="Top"/>
+        <Label Content="popis1" HorizontalAlignment="Left" Margin="417,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="popis2" HorizontalAlignment="Left" Margin="29,254,0,0" VerticalAlignment="Top"/>
+        <Label Content="popis3" HorizontalAlignment="Left" Margin="417,241,0,0" VerticalAlignment="Top"/>
+        <Label Content="popis4" HorizontalAlignment="Left" Margin="29,369,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>
